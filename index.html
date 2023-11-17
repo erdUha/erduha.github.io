@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./animate.min.css" />
+		<link rel="stylesheet" href="./components/navbar/navbar.css" />
+		<link rel="stylesheet" href="./components/glavnaya/glavnaya.css" />
+		<link rel="stylesheet" href="./components/footer/footer.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script> <!-- react library -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script><!-- special type of javascript syntax-->
+		<script src="wow.js"></script>
+	</head>
+	<body>
+		<div id="navbar"></div>
+		<div id="content"></div>
+		<div id="footer"></div>
+		<script type="text/jsx" src="./components/navbar/navbar.js"></script>
+		<script type="text/jsx" src="./components/glavnaya/glavnaya.js"></script>
+		<script type="text/jsx" src="./components/footer/footer.js"></script>
+		<script type="text/jsx">
+			let page = 0;
+			const redirect = (pg) => {
+				switch (pg) {
+					case 1:
+						React.render(<Glavnaya />, document.getElementById("content"));
+						break;
+					case 2:
+						React.render(<Navbar />, document.getElementById("content"));
+						break;
+					case 3:
+						React.render(<Navbar />, document.getElementById("content"));
+						break;
+					case 4:
+						React.render(<Navbar />, document.getElementById("content"));
+						break;
+					case 5:
+						React.render(<Navbar />, document.getElementById("content"));
+						break;
+				}
+			};
+			React.render(
+				<Navbar />,
+				document.getElementById("navbar")
+			);
+			React.render(
+				<Glavnaya />,
+				document.getElementById("content")
+			);
+			React.render(
+				<Footer />,
+				document.getElementById("footer")
+			);
+		</script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>
