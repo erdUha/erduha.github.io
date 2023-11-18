@@ -28,6 +28,6 @@
 	padding-bottom: 30px;
 }
 #vk_comments {
-	width: 100%;
+	width: 100% !important;
 	height: 600px !important;
 }
