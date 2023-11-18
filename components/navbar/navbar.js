@@ -1,4 +1,4 @@
-var Navbar = React.createClass({
+var Navbar = React.createClass({ // lol
 	render: function() {
 		return(
 			<div id="header">
