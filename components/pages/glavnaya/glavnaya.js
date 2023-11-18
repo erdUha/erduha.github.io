@@ -18,7 +18,7 @@ var Glavnaya = React.createClass({
 						<li data-wow-delay="1s" className="wow animate__animated animate__fadeInLeft">Поставка запасных частей и расходных материалов</li>
 					</ul>
 					<center><h3>Оставьте комментарий и получите скидку 10% на первую услугу!</h3></center>
-					<div width="100%" height="600px" id="vk_comments"></div>
+					<div id="vk_comments"></div>
 				</div>
 		);
 	}
