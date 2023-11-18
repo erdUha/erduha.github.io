@@ -19,6 +19,7 @@ var Glavnaya = React.createClass({
 					</ul>
 					<center><h3>Оставьте комментарий и получите скидку 10% на первую услугу!</h3></center>
 					<div id="vk_comments"></div>
+					<div id="vk_comments_browse"></div>
 				</div>
 		);
 	}
