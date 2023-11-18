@@ -9,7 +9,6 @@ var Navbar = React.createClass({
 						<li><a onClick={() => redirect(2)}>Примеры</a></li>
 						<li><a onClick={() => redirect(3)}>Почему выбирают нас?</a></li>
 						<li><a onClick={() => redirect(4)}>Видеобиблеотека</a></li>
-						<li><a onClick={() => redirect(5)}>Контакты</a></li>
 					</ul>
 				</div>
 			</div>

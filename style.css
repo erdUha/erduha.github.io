@@ -6,6 +6,9 @@ html, body {
 * {
     font-family: Manrope;
 }
+a {
+	cursor: pointer;
+}
 #content {
 	max-width: 960px;
 	padding-left: 40px;

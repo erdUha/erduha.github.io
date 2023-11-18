@@ -5,18 +5,26 @@
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./animate.min.css" />
 		<link rel="stylesheet" href="./components/navbar/navbar.css" />
-		<link rel="stylesheet" href="./components/glavnaya/glavnaya.css" />
+		<link rel="stylesheet" href="./components/pages/glavnaya/glavnaya.css" />
+		<link rel="stylesheet" href="./components/pages/primery/primery.css" />
+		<link rel="stylesheet" href="./components/pages/onas/onas.css" />
+		<link rel="stylesheet" href="./components/pages/videos/videos.css" />
 		<link rel="stylesheet" href="./components/footer/footer.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script> <!-- react library -->
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script><!-- special type of javascript syntax-->
 		<script src="wow.js"></script>
+		<script src="jquery.js"></script>
+		<script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
 	</head>
 	<body>
 		<div id="navbar"></div>
 		<div id="content"></div>
 		<div id="footer"></div>
 		<script type="text/jsx" src="./components/navbar/navbar.js"></script>
-		<script type="text/jsx" src="./components/glavnaya/glavnaya.js"></script>
+		<script type="text/jsx" src="./components/pages/glavnaya/glavnaya.js"></script>
+		<script type="text/jsx" src="./components/pages/primery/primery.js"></script>
+		<script type="text/jsx" src="./components/pages/onas/onas.js"></script>
+		<script type="text/jsx" src="./components/pages/videos/videos.js"></script>
 		<script type="text/jsx" src="./components/footer/footer.js"></script>
 		<script type="text/jsx">
 			let page = 0;
@@ -26,16 +34,13 @@
 						React.render(<Glavnaya />, document.getElementById("content"));
 						break;
 					case 2:
-						React.render(<Navbar />, document.getElementById("content"));
+						React.render(<Primery />, document.getElementById("content"));
 						break;
 					case 3:
-						React.render(<Navbar />, document.getElementById("content"));
+						React.render(<Onas />, document.getElementById("content"));
 						break;
 					case 4:
-						React.render(<Navbar />, document.getElementById("content"));
-						break;
-					case 5:
-						React.render(<Navbar />, document.getElementById("content"));
+						React.render(<Videos />, document.getElementById("content"));
 						break;
 				}
 			};
@@ -54,6 +59,11 @@
 		</script>
 		<script>
 			new WOW().init();
+		    VK.init({
+				apiId: 51795808,
+				onlyWidgets: true
+			});
+			VK.Widgets.Comments("vk_comments");
 		</script>
 	</body>
 </html>

@@ -1,0 +1,25 @@
+#block-prim {
+	width: 100%;
+	overflow: hidden;
+	background-color: #FF9819;
+	width: calc(100% - 60px);
+	padding: 0 30px;
+	padding-top: 20px;
+}
+#block-prim h2 {
+	font-weight: 400;
+}
+#block-prim p {
+	margin-bottom: 40px;
+}
+.flex {
+	display: flex;
+	gap: 20px;
+	margin: 100px 0;
+}
+.flex img {
+	width: 40%;
+}
+.txt h2 {
+	text-align: center;
+}

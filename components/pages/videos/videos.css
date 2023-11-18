@@ -1,0 +1,20 @@
+#block-vid {
+	width: 100%;
+	overflow: hidden;
+	background-color: #FF9819;
+	padding-top: 20px;
+}
+.vid {
+	margin-bottom: 100px;
+}
+#block-vid hr {
+	color: #444;
+	width: 86%;
+}
+#block-vid h2 {
+	padding: 0 7%;
+}
+.youtube-vid {
+	width: 100%;
+	aspect-ratio: 16/9;
+}
