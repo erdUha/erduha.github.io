@@ -32,6 +32,7 @@
 				switch (pg) {
 					case 1:
 						React.render(<Glavnaya />, document.getElementById("content"));
+						InitComments();
 						break;
 					case 2:
 						React.render(<Primery />, document.getElementById("content"));
@@ -63,9 +64,12 @@
 				apiId: 51795808,
 				onlyWidgets: true
 			});
-			VK.Widgets.Comments("vk_comments", {
-				limit: 15
-			});
+			function InitComments() {
+				VK.Widgets.Comments("vk_comments", {
+					limit: 15
+				});
+			}
+			InitComments();
 		</script>
 	</body>
 </html>
